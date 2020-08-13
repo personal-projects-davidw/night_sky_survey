@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Cosmic Survey Form</title>
+</head>
+<body>
+    <div class="container">
+
+        <header>
+            <h1 id="title">Night Sky Survey</h1>
+            <p id="description">A short survey to gather data on night sky observations.</p>
+        </header>
+
+        <form id="survey-form" class="form">
+            <div class="form-control">
+                <label id="name-label" for="name">Name</label>
+                <input id="name" type="text" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-control">
+                <label id="email-label" for="email">Email</label>
+                <input id="email" type="email" placeholder="Enter email" required>
+            </div>
+
+            <div class="form-control">
+                <label id="number-label" for="number">Age</label>
+                <input type="number" id="number" placeholder="Optional" min="10" max="120">
+            </div>
+
+            <div class="btn-sel-gp">
+                <p class="other-label">Are you using any optics?</p>
+                <div class="radio-button">
+                    <input type="radio" id="none" name="optic" value="none" checked>
+                    <label for="none">None</label>
+                </div>
+                <div class="radio-button">
+                    <input type="radio" id="binos" name="optic" value="binos">
+                    <label for="binos">Binoculars</label>
+                </div>
+                <div class="radio-button">
+                    <input type="radio" id="telescope" name="optic" value="telescope">
+                    <label for="telescope">Telescope</label>
+                </div>
+            </div>
+
+            <div class="form-control">
+                <label for="date">Observation date</label>
+                <input type="date" id="date">
+            </div>
+    
+            <div class="form-control">
+                <label id="dropdown-label" for="dropdown">Visibility</label>
+                <select id="dropdown" name="dropdown">
+                    <option value="">--Please choose an option--</option>
+                    <option value="Very poor">Very poor</option>
+                    <option value="Poor">Poor</option>
+                    <option value="Ok">Ok</option>
+                    <option value="Good">Good</option>
+                    <option value="Very good">Very Good</option>
+                    <option value="Excellent">Excellent</option>
+                </select>
+            </div>
+
+            <div class="btn-sel-gp">
+                <p class="other-label">Celestial objects visible</p>
+                <div class="cbox">
+                    <input type="checkbox" id="moon" name="moon" value="moon">
+                    <label for="moon">Moon</label>
+                </div>
+                <div class="cbox">
+                    <input type="checkbox" id="mercury" name="mercury" value="mercury">
+                    <label for="mercury">Mercury</label>
+                </div>
+                <div class="cbox">
+                    <input type="checkbox" id="venus" name="venus" value="venus">
+                    <label for="venus">Venus</label>
+                </div>
+                <div class="cbox">
+                    <input type="checkbox" id="mars" name="mars" value="mars">
+                    <label for="mars">Mars</label>
+                </div>
+                <div class="cbox">
+                    <input type="checkbox" id="jupiter" name="jupiter" value="jupiter">
+                    <label for="jupiter">Jupiter</label>
+                </div>
+                <div class="cbox">
+                    <input type="checkbox" id="saturn" name="saturn" value="saturn">
+                    <label for="saturn">Saturn</label>
+                </div>
+                <div class="cbox">
+                    <input type="checkbox" id="uranus" name="uranus" value="uranus">
+                    <label for="uranus">Uranus</label>
+                </div>
+                <div class="cbox">
+                    <input type="checkbox" id="neptune" name="neptune" value="neptune">
+                    <label for="neptune">Neptune</label>
+                </div>  
+            </div>
+            
+            <div class="form-control">
+                <label class="other-label" for="story">Observation notes</label>
+                <textarea id="story" name="story" rows="5" cols="43" placeholder="Comments"></textarea>
+            </div>
+            
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
